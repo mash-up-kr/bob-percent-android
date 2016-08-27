@@ -16,7 +16,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class PigClient {
 
-    private static final String BASE_URL = "http://192.168.15.255:4567";
+    private static final String BASE_URL = "http://192.168.15.167:4567";
 
 
     private volatile static PigClient instance;

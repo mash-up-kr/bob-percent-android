@@ -4,6 +4,7 @@ import com.mash.pig.bobpercent.model.UserModel;
 
 import retrofit2.Call;
 import retrofit2.http.Body;
+import retrofit2.http.GET;
 import retrofit2.http.POST;
 import retrofit2.http.Path;
 
@@ -27,4 +28,8 @@ public interface UserService {
 
     @POST("/user/match/{userId}/{code}")
     Call<UserModel> matchUser(@Path("userId") int userId, @Path("code") String code);
+
+
+    @GET("/user/{userId}")
+    Call<UserModel> getUser(@Path("userId") int userId);
 }

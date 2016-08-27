@@ -13,7 +13,9 @@
     <string name="signup_hint_email">E-MAIL</string>
     <string name="signup_hint_password">PW</string>
 
-    <string name="code_txt_generate">코드가 생성되었습니다! \n상대방 코드가 없다면...</string>
-    <string name="code_txt_send">내 코드 보내기</string>
-    <string name="code_hint_your_code">상대방 코드 입력</string>
+    <string name="pending_txt_gen_code">코드가 생성되었습니다!</string>
+    <string name="pending_hint_input_code">상대방 코드 입력</string>
+    <string name="pending_btn_next">NEXT</string>
+
+    <string name="gen_txt_code">아래의 코드를 복사하여 상대방에게 전송하세요!</string>
 </resources>

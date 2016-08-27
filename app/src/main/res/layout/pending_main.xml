@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rl_pending_image_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:src="@mipmap/image_circle_four"
+                />
+
+            <com.mash.pig.bobpercent.app.widget.FontButton
+                android:id="@+id/btn_pending_input"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:gravity="center"
+                android:text="상대방 코드 입력하기"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:background="@drawable/shape_round_pink"
+                />
+
+            <ImageView
+                android:id="@+id/iv_pending_et_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/shape_point_black"
+                android:layout_toLeftOf="@id/btn_pending_input"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_toLeftOf="@id/iv_pending_et_left"
+                android:layout_alignParentLeft="true"
+                android:background="#E6E6E6"
+                android:layout_centerVertical="true"
+                />
+
+            <ImageView
+                android:id="@+id/iv_pending_et_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/shape_point_black"
+                android:layout_toRightOf="@id/btn_pending_input"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_toRightOf="@id/iv_pending_et_right"
+                android:layout_alignParentRight="true"
+                android:background="#E6E6E6"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_pending_image_container"
+            android:layout_marginTop="60dp"
+            android:layout_centerHorizontal="true"
+            >
+
+            <com.mash.pig.bobpercent.app.widget.FontButton
+                android:id="@+id/btn_pending_notice"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:gravity="center"
+                android:text="내 코드 알려주기"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:background="@drawable/shape_round_pink"
+                />
+
+            <ImageView
+                android:id="@+id/iv_pending_btn_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/shape_point_black"
+                android:layout_toLeftOf="@id/btn_pending_notice"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_toLeftOf="@id/iv_pending_btn_left"
+                android:layout_alignParentLeft="true"
+                android:background="#E6E6E6"
+                android:layout_centerVertical="true"
+                />
+
+
+            <ImageView
+                android:id="@+id/iv_pending_btn_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/shape_point_black"
+                android:layout_toRightOf="@id/btn_pending_notice"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_toRightOf="@id/iv_pending_btn_right"
+                android:layout_alignParentRight="true"
+                android:background="#E6E6E6"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

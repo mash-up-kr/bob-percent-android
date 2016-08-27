@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.mash.pig.bobpercent">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:name=".BobPercentApplication"
         android:allowBackup="true"
@@ -20,9 +22,10 @@
 
         <activity android:name=".app.sign.SignUpActivity"/>
         <activity android:name=".app.sign.LoginActivity"/>
-        <activity android:name=".app.sign.CreateCodeActivity"/>
+        <activity android:name=".app.sign.PendingActivity"/>
+        <activity android:name=".app.sign.InputCodeActivity"/>
         <activity android:name=".app.FoodOrHisActivity"/>
-        <activity android:name=".app.sign.SendCodeActivity"/>
+        <activity android:name=".app.sign.GenCodeActivity"/>
         <activity android:name=".app.HistoryActivity"/>
         <activity android:name=".app.AnalysisActivity"/>
 

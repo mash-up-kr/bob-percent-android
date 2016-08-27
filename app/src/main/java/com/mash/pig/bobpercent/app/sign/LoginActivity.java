@@ -10,6 +10,7 @@ import android.widget.Toast;
 
 import com.mash.pig.bobpercent.BobPercentApplication;
 import com.mash.pig.bobpercent.R;
+import com.mash.pig.bobpercent.app.FoodOrHisActivity;
 import com.mash.pig.bobpercent.model.UserModel;
 import com.mash.pig.bobpercent.rest.PigClient;
 import com.mash.pig.bobpercent.rest.user.UserService;
@@ -66,7 +67,7 @@ public class LoginActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == Defines.REQUEST_SIGN_UP && resultCode == RESULT_OK) {
-            // TODO start pending activity
+            startPendingActivity();
         }
     }
 
@@ -85,7 +86,15 @@ public class LoginActivity extends AppCompatActivity {
                     UserModel user = response.body();
                     BobPercentApplication.getInstance().storeUser(user.getUserId(), user.isPending());
 
-                    // TODO start pending activity
+                    if (user.isPending()) {
+                        startPendingActivity();
+                    } else {
+                        BobPercentApplication.getInstance().storeUser(user.getUserId(), user.getCode(), user.isPending());
+                        Intent intent = new Intent(LoginActivity.this, FoodOrHisActivity.class);
+                        startActivity(intent);
+                    }
+
+
                     return;
                 }
 
@@ -99,6 +108,13 @@ public class LoginActivity extends AppCompatActivity {
                 Toast.makeText(LoginActivity.this, "회원가입에 실패하셨습니다. 다시 시도해주세요.", Toast.LENGTH_SHORT).show();
             }
         });
+    }
+
+
+    private void startPendingActivity() {
+        Intent intent = new Intent(this, PendingActivity.class);
+        startActivity(intent);
+        finish();
     }
 
 }

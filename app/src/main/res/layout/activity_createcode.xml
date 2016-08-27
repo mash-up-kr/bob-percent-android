@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
-        android:text="@string/code_txt_generate"
+        android:text="@string/pending_txt_gen_code"
         android:textSize="20sp"
         android:textColor="@android:color/black"
         />
@@ -25,7 +25,7 @@
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
         android:gravity="center"
-        android:text="@string/code_txt_send"
+        android:text="@string/pending_hint_input_code"
         android:textSize="20sp"
         android:textColor="@android:color/white"
         android:background="@drawable/shape_round_grey"
@@ -38,7 +38,7 @@
         android:layout_marginTop="40dp"
         android:padding="10dp"
         android:background="@drawable/shape_round_grey_stroke"
-        android:hint="@string/code_hint_your_code"
+        android:hint="@string/pending_btn_next"
         android:textColorHint="#cccccc" />
 
     <com.mash.pig.bobpercent.app.widget.FontButton

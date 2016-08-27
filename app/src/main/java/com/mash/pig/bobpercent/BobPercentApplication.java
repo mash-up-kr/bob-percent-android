@@ -23,6 +23,15 @@ public class BobPercentApplication extends Application {
     }
 
 
+    public void storeUser(int userId, String code, boolean pending) {
+        getSharedPreferences("pig", 0).edit()
+                .putInt("userId", userId)
+                .putString("code", code)
+                .putBoolean("pending", pending)
+                .apply();
+    }
+
+
     public int getUserId() {
         return getSharedPreferences("pig", 0).getInt("userId", 0);
     }
@@ -30,6 +39,11 @@ public class BobPercentApplication extends Application {
 
     public boolean isPending() {
         return getSharedPreferences("pig", 0).getBoolean("pending", true);
+    }
+
+
+    public String getCode() {
+        return getSharedPreferences("pig", 0).getString("code", "");
     }
 
 
