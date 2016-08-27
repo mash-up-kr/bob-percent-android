@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">BobPercent</string>
+
+    <string name="login_title">%</string>
+    <string name="login_hint_email">E-MAIL</string>
+    <string name="login_hint_password">PW</string>
+    <string name="login_btn_login">LOGIN</string>
+    <string name="login_btn_signup">sign up</string>
+
+
+    <string name="signup_btn_signup">SIGN UP</string>
+    <string name="signup_hint_name">NAME</string>
+    <string name="signup_hint_email">E-MAIL</string>
+    <string name="signup_hint_password">PW</string>
+
+    <string name="code_txt_generate">코드가 생성되었습니다! \n상대방 코드가 없다면...</string>
+    <string name="code_txt_send">내 코드 보내기</string>
+    <string name="code_hint_your_code">상대방 코드 입력</string>
 </resources>

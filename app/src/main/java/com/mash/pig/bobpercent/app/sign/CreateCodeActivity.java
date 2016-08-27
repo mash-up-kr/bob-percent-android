@@ -1,4 +1,4 @@
-package com.mash.pig.bobpercent.app;
+package com.mash.pig.bobpercent.app.sign;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -15,18 +15,6 @@ public class CreateCodeActivity  extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_createcode);
 
-    }
-    public void onClickNext(View v)
-    {
-        switch(v.getId()){
-            case R.id.btnNext:
-
-                
-
-
-
-                break;
-        }
     }
 
 }

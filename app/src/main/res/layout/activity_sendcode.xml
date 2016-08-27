@@ -22,7 +22,7 @@
             android:id="@+id/myCode"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/edittext_top_bg"
+            android:background="@drawable/shape_round_grey_stroke"
             android:padding="10dp"
             android:hint="상대방 코드 입력"
             android:textColorHint="#cccccc"

@@ -18,11 +18,11 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".app.SignUpActivity"/>
-        <activity android:name=".app.LoginActivity"/>
-        <activity android:name=".app.CreateCodeActivity"/>
+        <activity android:name=".app.sign.SignUpActivity"/>
+        <activity android:name=".app.sign.LoginActivity"/>
+        <activity android:name=".app.sign.CreateCodeActivity"/>
         <activity android:name=".app.FoodOrHisActivity"/>
-        <activity android:name=".app.SendCodeActivity"/>
+        <activity android:name=".app.sign.SendCodeActivity"/>
         <activity android:name=".app.HistoryActivity"/>
         <activity android:name=".app.AnalysisActivity"/>
 

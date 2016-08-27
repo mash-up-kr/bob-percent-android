@@ -1,4 +1,4 @@
-package com.mash.pig.bobpercent.app;
+package com.mash.pig.bobpercent.app.sign;
 
 import android.support.v7.app.AppCompatActivity;
 

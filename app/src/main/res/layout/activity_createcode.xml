@@ -1,55 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="wrap_content"
-    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:orientation="vertical"
+    >
 
-    <TextView
+    <com.mash.pig.bobpercent.app.widget.FontTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="코드가 생성되었습니다! "
-        android:id="@+id/textView"
-        android:layout_marginTop="32dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_marginTop="60dp"
+        android:text="@string/code_txt_generate"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        />
 
-    <TextView
-        android:layout_width="wrap_content"
+    <com.mash.pig.bobpercent.app.widget.FontButton
+        android:id="@+id/btn_createcode_send_code"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="상대방 코드가 없다면..."
-        android:id="@+id/textView2"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true" />
+        android:layout_marginTop="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center"
+        android:text="@string/code_txt_send"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/shape_round_grey"
+        />
 
-    <Button
-        android:layout_width="300dp"
-        android:layout_height="60dp"
-        android:text="내 코드 보내기"
-        android:id="@+id/button"
-        android:layout_marginBottom="41dp"
-        android:layout_above="@+id/myCode"
-        android:layout_centerHorizontal="true" />
     <EditText
         android:id="@+id/myCode"
-        android:layout_width="300dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/edittext_top_bg"
+        android:layout_marginTop="40dp"
         android:padding="10dp"
-        android:hint="상대방 코드 입력"
-        android:textColorHint="#cccccc"
+        android:background="@drawable/shape_round_grey_stroke"
+        android:hint="@string/code_hint_your_code"
+        android:textColorHint="#cccccc" />
 
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
-
-    <Button
+    <com.mash.pig.bobpercent.app.widget.FontButton
+        android:id="@+id/btn_createcode_next"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_round_grey"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:onClick="onClickNext"
         android:text="Next"
-        android:id="@+id/btnNext"
-        android:layout_below="@+id/myCode"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="47dp"
-        android:onClick="onClickNext" />
-</RelativeLayout>
+        android:textColor="@android:color/white"
+        />
+
+</LinearLayout>
