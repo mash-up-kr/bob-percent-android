@@ -91,8 +91,8 @@ public class LoginActivity extends AppCompatActivity {
                         BobPercentApplication.getInstance().storeUser(user.getUserId(), user.getCode(), user.isPending());
                         Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
                         startActivity(intent);
+                        finish();
                     }
-
 
                     return;
                 }
