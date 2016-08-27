@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 import com.mash.pig.bobpercent.BobPercentApplication;
 import com.mash.pig.bobpercent.R;
-import com.mash.pig.bobpercent.app.FoodOrHisActivity;
+import com.mash.pig.bobpercent.app.home.HomeActivity;
 import com.mash.pig.bobpercent.model.UserModel;
 import com.mash.pig.bobpercent.rest.PigClient;
 import com.mash.pig.bobpercent.rest.user.UserService;
@@ -50,7 +50,7 @@ public class InputCodeActivity extends AppCompatActivity {
                     UserModel user = response.body();
                     BobPercentApplication.getInstance().storeUser(user.getUserId(), user.getCode(), user.isPending());
 
-                    Intent intent = new Intent(InputCodeActivity.this, FoodOrHisActivity.class);
+                    Intent intent = new Intent(InputCodeActivity.this, HomeActivity.class);
                     startActivity(intent);
                     finish();
                     return;

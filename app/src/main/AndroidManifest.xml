@@ -24,8 +24,9 @@
         <activity android:name=".app.sign.LoginActivity"/>
         <activity android:name=".app.sign.PendingActivity"/>
         <activity android:name=".app.sign.InputCodeActivity"/>
-        <activity android:name=".app.FoodOrHisActivity"/>
         <activity android:name=".app.sign.GenCodeActivity"/>
+        <activity android:name=".app.home.HomeActivity"/>
+        <activity android:name=".app.quiz.QuizActivity"/>
         <activity android:name=".app.HistoryActivity"/>
         <activity android:name=".app.AnalysisActivity"/>
 

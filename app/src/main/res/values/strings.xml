@@ -18,4 +18,7 @@
     <string name="pending_btn_next">NEXT</string>
 
     <string name="gen_txt_code">아래의 코드를 복사하여 상대방에게 전송하세요!</string>
+
+    <string name="home_txt_match">FOOD MATCH</string>
+    <string name="home_txt_history">VIEW HISTORY</string>
 </resources>

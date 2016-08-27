@@ -7,6 +7,7 @@ import android.os.Bundle;
 
 import com.mash.pig.bobpercent.BobPercentApplication;
 import com.mash.pig.bobpercent.R;
+import com.mash.pig.bobpercent.app.home.HomeActivity;
 import com.mash.pig.bobpercent.app.sign.LoginActivity;
 
 public class SplashActivity extends AppCompatActivity {
@@ -24,7 +25,7 @@ public class SplashActivity extends AppCompatActivity {
                 public void run() {
                     // 메인 액티비티를 실행하고 로딩화면을 죽인다.
                     if (!BobPercentApplication.getInstance().isPending()) {
-                        Intent intent = new Intent(SplashActivity.this, FoodOrHisActivity.class);
+                        Intent intent = new Intent(SplashActivity.this, HomeActivity.class);
                         startActivity(intent);
                         finish();
                         return;
