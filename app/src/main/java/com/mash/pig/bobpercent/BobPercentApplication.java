@@ -2,6 +2,12 @@ package com.mash.pig.bobpercent;
 
 import android.app.Application;
 
+import com.facebook.drawee.backends.pipeline.Fresco;
+import com.facebook.imagepipeline.backends.okhttp3.OkHttpImagePipelineConfigFactory;
+import com.facebook.imagepipeline.core.ImagePipelineConfig;
+
+import okhttp3.OkHttpClient;
+
 /**
  * Created by bigstark on 2016. 8. 27..
  */
@@ -52,5 +58,18 @@ public class BobPercentApplication extends Application {
     public void onCreate() {
         super.onCreate();
         instance = this;
+        initFresco();
     }
+
+
+    // initialize Fresco. Adapt OkHttp later.
+    private void initFresco() {
+        OkHttpClient okHttpClient = new OkHttpClient();
+        ImagePipelineConfig config = OkHttpImagePipelineConfigFactory.newBuilder(this, okHttpClient)
+                .setDownsampleEnabled(true)
+                .build();
+
+        Fresco.initialize(this, config);
+    }
+
 }
